@@ -1,0 +1,50 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Group",
+      "label": "Basic Types",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/stringExample" },
+        { "type": "Control", "scope": "#/properties/numberExample" },
+        { "type": "Control", "scope": "#/properties/integerExample" },
+        { "type": "Control", "scope": "#/properties/booleanExample" }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Advanced Types",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/dateExample" },
+        { "type": "Control", "scope": "#/properties/emailExample" },
+        { "type": "Control", "scope": "#/properties/uriExample" },
+        { "type": "Control", "scope": "#/properties/colorExample" }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Array and Object Structures",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/enumExample" },
+        { "type": "Control", "scope": "#/properties/arrayExample" },
+        { "type": "Control", "scope": "#/properties/nestedObject" },
+        { "type": "Control", "scope": "#/properties/arrayOfObjects" }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Conditional Fields",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/conditionalProperty" },
+        { "type": "Control", "scope": "#/properties/extraField" }
+      ],
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/conditionalProperty",
+          "schema": { "const": "showExtra" }
+        }
+      }
+    }
+  ]
+}

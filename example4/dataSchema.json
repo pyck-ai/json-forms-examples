@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "stringExample": {
+      "type": "string",
+      "description": "A simple string"
+    },
+    "numberExample": {
+      "type": "number",
+      "description": "A floating point number"
+    },
+    "integerExample": {
+      "type": "integer",
+      "description": "An integer value"
+    },
+    "booleanExample": {
+      "type": "boolean",
+      "description": "A boolean value"
+    },
+    "nullExample": {
+      "type": "null",
+      "description": "A null value"
+    },
+    "dateExample": {
+      "type": "string",
+      "format": "date-time",
+      "description": "A date-time formatted string"
+    },
+    "emailExample": {
+      "type": "string",
+      "format": "email",
+      "description": "An email address"
+    },
+    "uriExample": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI"
+    },
+    "colorExample": {
+      "type": "string",
+      "format": "color",
+      "description": "A color in hex format"
+    },
+    "enumExample": {
+      "type": "string",
+      "enum": ["Option 1", "Option 2", "Option 3"],
+      "description": "An enumeration of options"
+    },
+    "arrayExample": {
+      "type": "array",
+      "description": "An array of strings",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nestedObject": {
+      "type": "object",
+      "description": "A nested object",
+      "properties": {
+        "subProperty1": {
+          "type": "string"
+        },
+        "subProperty2": {
+          "type": "integer"
+        }
+      }
+    },
+    "arrayOfObjects": {
+      "type": "array",
+      "description": "An array of objects",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "conditionalProperty": {
+      "type": "string",
+      "enum": ["showExtra"],
+      "description": "Trigger conditional schema"
+    }
+  },
+  "if": {
+    "properties": { "conditionalProperty": { "const": "showExtra" } }
+  },
+  "then": {
+    "properties": {
+      "extraField": {
+        "type": "string",
+        "description": "This field appears conditionally"
+      }
+    }
+  }
+}
