@@ -9,7 +9,11 @@ This repository provides examples of JSON Schemas used to generate forms dynamic
    curl https://api.github.com/repos/pyck-ai/json-forms-examples/contents/
    ```
 2. Filter for the entries with the `type == dir`.
-3. In there you can find the `dataSchema.json` and `uiSchema.json` files for further processing.
+3. In there you can find the `dataSchema.json` and `uiSchema.json` files for further processing. So just fetch them by replacing `example1` via:
+```sh
+   curl https://raw.githubusercontent.com/pyck-ai/json-forms-examples/refs/heads/main/example1/uiSchema.json
+   curl https://raw.githubusercontent.com/pyck-ai/json-forms-examples/refs/heads/main/example1/dataSchema.json
+   ```
 3. Use a JSON Schema-based form renderer (e.g., [React JSON Schema Form](https://github.com/rjsf-team/react-jsonschema-form) or [JSONForms](https://jsonforms.io/)) to visualize the forms.
 
 ## Example JSON Schema
