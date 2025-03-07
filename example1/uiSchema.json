@@ -6,7 +6,8 @@
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/name"
+          "scope": "#/properties/name",
+          "label": "First Name"
         },
         {
           "type": "Control",
