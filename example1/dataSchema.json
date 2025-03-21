@@ -6,6 +6,11 @@
       "minLength": 3,
       "description": "Please enter your name"
     },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "unique": true
+    }
     "vegetarian": {
       "type": "boolean"
     },
