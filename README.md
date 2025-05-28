@@ -1,4 +1,6 @@
 # JSON Forms Examples
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpyck-ai%2Fjson-forms-examples.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpyck-ai%2Fjson-forms-examples?ref=badge_shield)
+
 
 This repository provides examples of JSON Schemas used to generate forms dynamically. The examples are based on the [JSON Schema](https://json-schema.org) standard and demonstrate various ways to structure and validate form data.
 
@@ -54,3 +56,6 @@ To render and test the example schemas, you can use:
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpyck-ai%2Fjson-forms-examples.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpyck-ai%2Fjson-forms-examples?ref=badge_large)
